@@ -13,7 +13,6 @@ var d
 
 function setup() {
   createCanvas(600,400);
-  song = loadSound('Matt and Kim - Make A Mess (Audio).mp3');
 }
 function draw() 
 
@@ -31,7 +30,7 @@ function draw()
       if (mouseIsPressed)
         {
           x=x+cxspeed;
-          song.play();
+        
           background (a,b,c);
           stroke (b);
           strokeWeight(4);
@@ -40,7 +39,7 @@ function draw()
         }
       else
         {
-          song.stop();
+    
           background (255);
           stroke (0);
           strokeWeight(4);
